@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./slidedown-nav.css" rel="stylesheet" />
+		
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<script>
+
+			function showOptions(divId) {
+				$(divId).css('display', 'block');
+				 $( '#menu-options-container' ).slideDown( "slow", function() {
+				 	$(divId).css('display', 'block');
+				 });
+			}
+
+			function hideOptions(divId) {
+				$(divId).css('display', 'none');
+				 $( '#menu-options-container' ).slideUp( "slow");	
+			}
+
+
+			$(document).ready(function() {
+				$('#menu-options-container').slideUp('fast');
+			});
+		</script>
+
+	</head>
+
+	<body>
+	<div class="container">
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">iamsap</a>
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+		      <ul class="nav navbar-nav">
+		        <li>
+		        	<a href="#" onmouseenter="showOptions('#menu1')" onmouseleave="hideOptions('#menu1')">Tab1</a>
+		        </li>
+		        <li>
+		        	<a href="#" onmouseenter="showOptions('#menu2')" onmouseleave="hideOptions('#menu2')">Tab2</a>
+		        </li>
+		      </ul>
+		      
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	
+		<div id="menu-options-container" class="menu-options-container">
+
+			<div id="menu1" class="clearfix menu-options">
+				<ul>
+					<li class="heading">Heading 1</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>
+				<ul>
+					<li class="heading">Heading 2</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>
+				<ul>
+					<li class="heading">Heading 3</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>		
+			</div>	
+
+			<div id="menu2" class="clearfix menu-options">
+				<ul>
+					<li class="heading">Heading 4</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>
+				<ul>
+					<li class="heading">Heading 5</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>
+				<ul>
+					<li class="heading">Heading 6</li>
+					<li><a href="#">Option 1</a></li>
+					<li><a href="#">Option 2</a></li>
+					<li><a href="#">Option 3</a></li>
+					<li><a href="#">Option 4</a></li>
+					<li><a href="#">Option 5</a></li>
+				</ul>		
+			</div>				
+
+		</div>
+
+
+		<article>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse imperdiet lorem eget tellus faucibus facilisis. Integer pretium lorem odio, in pretium ante commodo vel. Praesent consequat consectetur nisl, eget aliquet odio auctor sit amet. Suspendisse commodo, diam a placerat ultricies, nisi odio pretium turpis, nec aliquet dolor tortor eget nibh. Nullam pulvinar velit vel neque rhoncus lacinia. Curabitur dapibus diam eu turpis semper viverra. Nulla venenatis accumsan lacus, et molestie erat rutrum et. Sed congue volutpat commodo. Suspendisse vel ullamcorper augue, in pretium lorem. Nunc suscipit a nulla in condimentum. Cras ut erat ac ante accumsan fringilla quis ut quam.</p>
+		</article>
+
+
+	</div>
+
+	</body>
+
+</html>

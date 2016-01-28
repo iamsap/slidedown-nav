@@ -1,0 +1,41 @@
+.navbar {
+	border:1px solid #ccc;
+	margin:0px;
+}
+
+article {
+	margin:20px;
+}
+
+.menu-options-container {
+	position:absolute;
+	width:100%;
+	left:0px;
+	right:0px;
+	z-index:1000;
+	background:white;
+	border-left:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	border-right:1px solid #ccc;	
+}
+
+.menu-options {
+	padding:20px;
+	width:800px;
+	margin:0px auto;
+	left:100%;
+	right:100%;
+	display:none;
+}
+
+.menu-options > ul {
+	float:left;
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	margin-right:20px;
+}
+
+.menu-options > ul > li.heading {
+	text-decoration: underline;
+}
